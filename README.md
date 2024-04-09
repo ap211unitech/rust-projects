@@ -18,13 +18,14 @@ This is a simple command line application written in Rust for currency exchange.
 1. Clone this repository to your local machine:
 
 ```bash
-git clone https://github.com/your-username/currency-exchange-cli.git
+git clone https://github.com/ap211unitech/rust-projects/tree/currency-exchange
 ```
 
 2. Navigate into the project directory:
 
 ```bash
-cd currency-exchange-cli
+cd rust-projects
+git checkout currency-exchange
 ```
 
 3. Build the project using Cargo:
