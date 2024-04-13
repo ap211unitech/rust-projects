@@ -20,11 +20,15 @@ pub async fn get_exchange_rates(
 
     let exchange_api_url = format!("{}{}", EXCHANGE_BASE_URL, from_currency);
 
-    let response = client.get(exchange_api_url).send().await?;
-    let exchange_rates: ExchangeRates = response.json().await?;
+    let response = client
+        .get(exchange_api_url)
+        .send()
+        .await?
+        .json::<ExchangeRates>()
+        .await?;
 
-    match exchange_rates.conversion_rates.get(to_currency) {
-        Some(_) => Ok(exchange_rates),
+    match response.conversion_rates.get(to_currency) {
+        Some(_) => Ok(response),
         None => {
             let err_msg = format!(
                 "Exchange rate from {} to {} not found.",
