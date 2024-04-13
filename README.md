@@ -29,9 +29,19 @@ git checkout currency-exchange
 ```
 
 3. Build the project using Cargo:
+
 ```bash
 cargo build --release
 ```
+
+or 
+
+Run the bash file
+
+```bash
+bash release.sh
+```
+
 
 ## Usage
 
@@ -43,10 +53,10 @@ Once you've built the project, you can run the executable from the command line.
 
 or 
 
-Run the bash file
+with the exchange file (if you ran bash command)
 
 ```bash
-bash release.sh
+./exchange <AMOUNT> <FROM_CURRENCY> <TO_CURRENCY>
 ```
 
 
