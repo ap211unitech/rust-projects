@@ -38,11 +38,26 @@ cargo build --release
 Once you've built the project, you can run the executable from the command line.
 
 ```bash
-./target/release/currency-exchange <AMOUNT> <FROM_CURRENCY> <TO_CURRENCY>
+./target/release/exchange <AMOUNT> <FROM_CURRENCY> <TO_CURRENCY>
 ```
+
+or 
+
+Run the bash file
+
+```bash
+bash release.sh
+```
+
 
 ## Example
 
 ```bash
-./target/release/currency-exchange 100 USD EUR
+./target/release/exchange 100 USD EUR
+```
+
+or 
+
+```bash
+./exchange 100 USD EUR
 ```
