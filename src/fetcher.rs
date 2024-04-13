@@ -30,7 +30,7 @@ pub async fn get_exchange_rates(
                 "Exchange rate from {} to {} not found.",
                 from_currency, to_currency
             );
-            return Err(Box::new(io::Error::new(std::io::ErrorKind::Other, err_msg)));
+            return Err(Box::new(io::Error::new(io::ErrorKind::Other, err_msg)));
         }
     }
 }
