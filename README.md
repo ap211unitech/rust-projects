@@ -4,7 +4,7 @@ This is a command line application written in Rust for handling operations with 
 
 ## Features
 
-- Create a CSV file by providing header and fields
+- Upload a CSV file by providing URL
 - Read any of the existing CSV file
 - Edit any of the existing CSV file
 - Delete any of the existing CSV file
@@ -13,4 +13,4 @@ This is a command line application written in Rust for handling operations with 
 ## Prerequisites
 
 - Rust programming language installed. You can download it from [Rust's official website](https://www.rust-lang.org/tools/install).
-- Stable internet connection.
+- Stable internet connection if you are fetching CSV from URL
