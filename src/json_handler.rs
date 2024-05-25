@@ -47,7 +47,6 @@ pub fn write_json() -> Result<(), Box<dyn Error>> {
         name: String::from("Arjun Porwal"),
         is_famous: true,
     };
-
     let json = serde_json::to_string(&author).unwrap();
     println!("{}", json);
     Ok(())
