@@ -11,4 +11,9 @@ fn main() {
     if let Err(e) = json_handler::read_from_file() {
         eprintln!("{}", e);
     }
+
+    // Convert struct to JSON
+    if let Err(e) = json_handler::write_json() {
+        eprintln!("{}", e);
+    }
 }
