@@ -6,6 +6,7 @@ This is a command line application written in Rust for handling operations with 
 
 - Read a CSV file
 - Read JSON file
+- Write JSON file (Convert Structs to JSON)
 
 ## Prerequisites
 
