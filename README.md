@@ -1,7 +1,13 @@
-## Rust Projects
+# Handling HTTP Requests
 
-Hello everyone, this is the list of nearly every project I've built to go deeper into Rust: 
+Handling HTTP requests in Rust for handling operations with different kind of APIs.
 
-1. [Minigrep](https://github.com/ap211unitech/rust-projects/tree/minigrep)
-2. [Currency Exchange](https://github.com/ap211unitech/rust-projects/tree/currency-exchange)
-3. [File Handler](https://github.com/ap211unitech/rust-projects/tree/csv-handler)
+## Features
+
+- Handle GET Request
+- Async/Await
+- Making API calls
+
+## Prerequisites
+
+- Rust programming language installed. You can download it from [Rust's official website](https://www.rust-lang.org/tools/install).
