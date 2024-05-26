@@ -1,3 +1,7 @@
+mod blocking_request;
+
 fn main() {
-    println!("Hello, world!");
+    if let Err(e) = blocking_request::main() {
+        eprintln!("{}", e);
+    }
 }
